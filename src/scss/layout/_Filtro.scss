@@ -1,0 +1,46 @@
+
+
+.container-fluid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    gap: 1.5rem;
+    margin: 1rem;
+
+    @include desktop {
+        background-color: $grisOscuro;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center; 
+        margin-top:-2%;
+        padding: 4rem;
+         
+    }
+}
+
+.custom-select,
+.btn  {
+    height: 5rem;
+    width: 30rem;
+
+    option {
+        text-align: center;
+    }
+}
+
+button {
+    background-color: $amarillo;
+}
+
+.highlight {
+    border: 2px solid red;
+    background-color: yellow;
+}
+
+
+
+
+
+
+

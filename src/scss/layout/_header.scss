@@ -1,0 +1,109 @@
+.no-webp .Yumbo {
+    background-image: url(../img/yumbo.jpg);
+}
+
+.webp .Yumbo {
+    background-image: url(../img/yumbo.webp);
+}
+
+.no-webp .Medellin {
+    background-image: url(../img/Medellin.jpg);
+}
+
+.webp .Medellin {
+    background-image: url(../img/Medellin.webp);
+}
+
+.no-webp .Pereira {
+    background-image: url(../img/Pereira.jpg);
+}
+
+.webp .Pereira {
+    background-image: url(../img/Pereira.webp);
+}
+.no-webp .Barranquilla {
+    background-image: url(../img/Barranquilla.jpg);
+}
+
+.webp .Barranquilla {
+    background-image: url(../img/Barranquilla.webp);
+}
+.no-webp .Bucaramanga {
+    background-image: url(../img/Bucaramanga.jpg);
+}
+
+.webp .Bucaramanga {
+    background-image: url(../img/Bucaramanga.webp);
+}
+.no-webp .Manizales {
+    background-image: url(../img/manizales.jpg);
+}
+
+.webp .Manizales {
+    background-image: url(../img/manizales.webp);
+}
+
+
+.header {
+    background-color: $grisOscuro;
+    padding: 1rem 0rem 3rem 0rem;
+
+    &.inicio {
+        background-position: center center;
+        background-size: cover;
+
+        @include tablet {
+            min-height: 70rem;
+        }
+        
+        .contenido-header {
+            @include tablet {
+                min-height: 70rem;
+            }
+        }
+
+    }
+
+    .contenido-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    
+    
+        h1 {
+            text-align: left;
+            color: $blanco;
+            font-weight: $bold;
+            line-height: 2;
+            max-width: 60rem;
+        }
+
+       
+    }
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .custom-select, .btn-primary {
+        margin: 0 10px; 
+    }
+    
+    .custom-select, .btn-primary {
+        text-align: center;
+    }
+    
+    
+    .btn-primary {
+        margin-top: 10px; 
+    }
+
+}
+

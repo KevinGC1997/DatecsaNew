@@ -1,0 +1,75 @@
+
+
+@include tablet {
+    .contenedor-yumbo {
+        @include grid(2, 2rem);
+       
+
+    }
+
+}
+
+@include desktop {
+    .contenedor-yumbo {
+        @include grid(3, 2rem);
+       
+
+    }
+
+}
+
+
+.yumbo {
+    width: 354px;
+    height: 472px;
+    background-color: lighten(white, 5);
+    border: 1px solid darken($gris, 10);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+    
+    picture img {
+        width: 100%; /* La imagen se ajusta al ancho completo */
+        height: 60%; /* La imagen ocupa el 65% de la altura total */
+        object-fit: cover; /* La imagen se recorta para ajustarse al espacio sin distorsión */
+    }
+  
+    .contenido-yumbo {
+        padding: 1rem 1rem; /* Espacio alrededor del texto */
+        height: 20%; /* El texto ocupa el 35% de la altura total */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+
+
+
+    }
+  
+    h3, p {
+        margin: 0;
+        font-size: 1.4rem;
+        text-align: center;
+        white-space: nowrap; /* Evita que el texto se desborde */
+        overflow: hidden;
+        text-overflow: ellipsis; /* Agrega puntos suspensivos si el texto es muy largo */
+
+    }
+  
+    .correo {
+      color: $verde;
+      font-weight: $bold;
+      font-size: 1.2rem;
+    }
+  
+    .seccion {
+      display: block;
+      width: 100%;
+      clear: both; /* Limpia floats si se han usado */
+      margin-bottom: 20px; /* Espacio entre secciones */
+    }
+  }
